@@ -15,4 +15,8 @@ Then create a configuration file at `/etc/nginx/sites-available/maintenance` by 
 ```
 ln -s /etc/nginx/sites-available/maintenance /etc/nginx/sites-enabled/
 ```
-being sure to delete the other enabled symbolic link. There should now be a maintenance page.
+being sure to delete the other enabled symbolic link. Reload the page with
+```
+service nginx reload
+```
+There should now be a maintenance page.
